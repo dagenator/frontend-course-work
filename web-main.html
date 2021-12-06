@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+    <title>Стили</title>
+
+
+
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        
+
+        @font-face {
+        font-family: 'Proxima Nova'; 
+        src: local('Proxima Nova')
+            url(./fonts/ProximaNovaExCn-Regular.ttf); 
+        }
+
+        @font-face {
+        font-family: 'Proxima Nova Bold'; 
+        src: local('Proxima Nova Bold')
+            url(./fonts/ProximaNovaExCn-Bold.ttf); 
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        body {
+            height: auto;
+        }
+
+
+        
+        #rocket{
+            
+            width: 16px;
+            height: 16px;
+            left: 135px;
+            top: 45px;
+
+        }
+        #uxepress{
+           
+            width: 100px;
+            height: 14px;
+            left: 155px;
+            top: 47px;
+            
+        }
+        #line{
+            margin-left: 50px;
+            margin-right: 30px;
+            width: 14px;
+            height: 16px;
+            left: 305px;
+            top: 46px;
+        }
+
+
+        .top_block_blue{
+           
+            min-height: 718px;
+            height: auto;
+            background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); /* Цвет фона и путь к файлу */
+            color: #fff; /* Цвет текста */
+            padding: 46px 30px 30px 46px;   
+        }
+
+        #top_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            
+
+        }
+        #top_header_right{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #top_header_left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #top_header_yellow_square{
+            width: 170px;
+            height: 52px;
+            border: 1px solid #E5E31F;
+            border-radius: 10px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        #in_button{
+            font-family: Proxima Nova;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            color: #E5E31F;
+
+
+        }
+
+        
+
+        .proxima_nova{
+            font-family: Proxima Nova;
+        }
+
+        .container{
+            padding-right: 135px;
+            padding-left: 135px;
+        }
+
+        .slider_box{
+            height: 600;
+        }
+
+        .info_container{
+            background-color: white;
+            color: #000000;
+            padding-top: 96px;
+            margin-bottom: 26px;
+            text-align: center;
+
+        }
+
+        .info_steps{
+            display: flex;
+            justify-content:center;
+        }
+
+        .info_box{
+            margin-bottom: 114px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .info_header{
+            margin-bottom: 148px;
+            font-family: Proxima Nova Bold;
+            font-size: 28px;
+            line-height: 34px;
+            color: #2A496B;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class = "top_block_blue">
+            
+            <div class = "container" id = top_header>
+
+                <div id = "top_header_left">
+                
+                    <div>
+                        <img id = "rocket"
+                        src=".\sourse\rocket.svg"
+                        alt="img of rocket"
+                        />
+        
+                        <img id = "uxepress"
+                            src=".\sourse\UXEPRESS.svg"
+                            alt="uxepress"
+                        />
+                    </div>
+                
+                    <div>
+                        <svg id = line width="1" height="14" viewBox="0 0 1 14" fill="none" >
+                            <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="14" stroke="#A9C5E0"/>
+                            
+                        </svg>
+                    </div>
+                    <div style="font-size: 13; color: #A9C5E0 ; ">
+                        <text class ="proxima_nova">
+                            Курьерская служба доставки
+                        </text>
+                    </div>
+                
+                </div>
+                
+                <div id = "top_header_right">
+                
+                    <div  style="margin-right: 5px;">
+                        <img id = "phone_img"
+                            src=".\sourse\phone.svg"
+                            alt="phone_img"
+                            viewBox="0 0 1 14"
+                        />
+                    </div>
+
+                    <div>
+                        <text style="margin-right: 50px; color: #A9C5E0;" class = "proxima_nova" >
+                            8 (909) 023-12-51
+                        </text>
+                    </div>
+                    
+                    <div id = "top_header_yellow_square">
+                        <text id = "in_button">
+                            Вход
+                        </text>
+                    </div>
+                <div>
+            </div>
+
+        </div>
+    </header>
+    <slider>
+        <div class = "slider_box">
+
+        </div>
+
+    </slider>
+    <info_section>
+        <div class="info_container container">
+            <h3 class = "info_header" >
+                    5 шагов к заявке
+            </h3>
+         <div class="info_steps">
+            <div class="info_box">
+                <div>
+                    <img 
+                    src=".\sourse\calculator.svg"
+                    alt="calculator_img"
+                    width: 51px;
+                    height: 52px;
+                    />
+                </div>
+                <div style="size:20px; color: #000000;" class = "proxima_nova">
+                    <text >
+                        Расчетать стоимость
+                    </text>
+                </div>
+                <div style="size:15px; color: #000000;" class = "proxima_nova">
+                    <text >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
+                    </text>
+                </div>
+               
+                
+            </div>
+            
+         </div>
+
+        </div>
+    </info_section>
+
+    <bottom>
+
+    </bottom>
+
+    
+</body>
