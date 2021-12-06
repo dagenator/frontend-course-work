@@ -4,9 +4,6 @@
 <meta charset="utf-8"/>
 
     <title>Стили</title>
-
-
-
     <style>
         html, body, div, span, applet, object, iframe,
         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -34,17 +31,16 @@
             display: block;
         }
         
-
         @font-face {
-        font-family: 'Proxima Nova'; 
-        src: local('Proxima Nova')
-            url(./fonts/ProximaNovaExCn-Regular.ttf); 
+        font-family: Proxima Nova; 
+        src: 
+            url('./fonts/ProximaNovaExCn-Regular.ttf'); 
         }
 
         @font-face {
-        font-family: 'Proxima Nova Bold'; 
-        src: local('Proxima Nova Bold')
-            url(./fonts/ProximaNovaExCn-Bold.ttf); 
+        font-family: Proxima Nova Bold; 
+        src:
+            url('./fonts/ProximaNovaExCn-Bold.ttf'); 
         }
 
         ol, ul {
@@ -70,7 +66,6 @@
 
         
         #rocket{
-            
             width: 16px;
             height: 16px;
             left: 135px;
@@ -109,8 +104,6 @@
             justify-content: space-between;
             align-items: center;
 
-            
-
         }
         #top_header_right{
             display: flex;
@@ -146,9 +139,19 @@
 
         }
 
-        
-
         .proxima_nova{
+            font-family: Proxima Nova;
+        }
+        
+        .info_box_mes{
+            size:20px; 
+            color: #000000;
+            font-family: Proxima Nova;
+        }
+        
+        .info_box_comment{
+            size:15px; 
+            color: #000000;
             font-family: Proxima Nova;
         }
 
@@ -170,12 +173,22 @@
 
         }
 
-        .info_steps{
+        .info_steps_up{
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .info_steps_down{
             display: flex;
             justify-content:center;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
         .info_box{
+            width: 350px;
             margin-bottom: 114px;
             display: flex;
             flex-direction: column;
@@ -195,77 +208,75 @@
 </head>
 <body>
 
-    <header>
-        <div class = "top_block_blue">
-            
-            <div class = "container" id = top_header>
-
-                <div id = "top_header_left">
-                
-                    <div>
-                        <img id = "rocket"
-                        src=".\sourse\rocket.svg"
-                        alt="img of rocket"
-                        />
+    <div class = "top_block_blue">
         
-                        <img id = "uxepress"
-                            src=".\sourse\UXEPRESS.svg"
-                            alt="uxepress"
-                        />
-                    </div>
-                
-                    <div>
-                        <svg id = line width="1" height="14" viewBox="0 0 1 14" fill="none" >
-                            <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="14" stroke="#A9C5E0"/>
-                            
-                        </svg>
-                    </div>
-                    <div style="font-size: 13; color: #A9C5E0 ; ">
-                        <text class ="proxima_nova">
-                            Курьерская служба доставки
-                        </text>
-                    </div>
-                
+        <div class = "container" id = top_header>
+
+            <div id = "top_header_left">
+            
+                <div>
+                    <img id = "rocket"
+                    src=".\sourse\rocket.svg"
+                    alt="img of rocket"
+                    />
+    
+                    <img id = "uxepress"
+                        src=".\sourse\UXEPRESS.svg"
+                        alt="uxepress"
+                    />
+                </div>
+            
+                <div>
+                    <svg id = line width="1" height="14" viewBox="0 0 1 14" fill="none" >
+                        <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="14" stroke="#A9C5E0"/>
+                        
+                    </svg>
+                </div>
+                <div style="font-size: 13; color: #A9C5E0 ; ">
+                    <text class ="proxima_nova">
+                        Курьерская служба доставки
+                    </text>
+                </div>
+            
+            </div>
+            
+            <div id = "top_header_right">
+            
+                <div  style="margin-right: 5px;">
+                    <img id = "phone_img"
+                        src=".\sourse\phone.svg"
+                        alt="phone_img"
+                        viewBox="0 0 1 14"
+                    />
+                </div>
+
+                <div>
+                    <text style="margin-right: 50px; color: #A9C5E0;" class = "proxima_nova" >
+                        8 (909) 023-12-51
+                    </text>
                 </div>
                 
-                <div id = "top_header_right">
-                
-                    <div  style="margin-right: 5px;">
-                        <img id = "phone_img"
-                            src=".\sourse\phone.svg"
-                            alt="phone_img"
-                            viewBox="0 0 1 14"
-                        />
-                    </div>
-
-                    <div>
-                        <text style="margin-right: 50px; color: #A9C5E0;" class = "proxima_nova" >
-                            8 (909) 023-12-51
-                        </text>
-                    </div>
-                    
-                    <div id = "top_header_yellow_square">
-                        <text id = "in_button">
-                            Вход
-                        </text>
-                    </div>
-                <div>
+                <div id = "top_header_yellow_square">
+                    <text id = "in_button">
+                        Вход
+                </div>
             </div>
-
         </div>
-    </header>
-    <slider>
+
+    </div>
+    
+    
         <div class = "slider_box">
 
         </div>
 
-    </slider>
-    <info_section>
-        <div class="info_container container">
-            <h3 class = "info_header" >
-                    5 шагов к заявке
-            </h3>
-         <div class="info_steps">
+    
+   
+    <div class="info_container container">
+        <h3 class = "info_header" >
+                5 шагов к заявке
+        </h3>
+        <div class="info_steps_up">
             <div class="info_box">
                 <div>
                     <img 
@@ -275,28 +286,91 @@
                     height: 52px;
                     />
                 </div>
-                <div style="size:20px; color: #000000;" class = "proxima_nova">
-                    <text >
+                <div  class = "info_box_mes">
                         Расчетать стоимость
-                    </text>
                 </div>
-                <div style="size:15px; color: #000000;" class = "proxima_nova">
-                    <text >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
-                    </text>
+                <div class = "info_box_comment">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
                 </div>
-               
-                
+            </div>
+
+            <div class="info_box">
+                <div>
+                    <img 
+                    src=".\sourse\car.svg"
+                    alt="car_img"
+                    width: 51px;
+                    height: 52px;
+                    />
+                </div>
+                <div  class = "info_box_mes">
+                    Вызвать курьера
+                </div>
+                <div class = "info_box_comment">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
+                </div>
+            </div>
+
+            <div class="info_box">
+                <div>
+                    <img 
+                    src=".\sourse\hand.svg"
+                    alt="hand_img"
+                    width: 51px;
+                    height: 52px;
+                    />
+                </div>
+                <div  class = "info_box_mes">
+                    Оплатить услуги
+                </div>
+                <div class = "info_box_comment">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class = "info_steps_down">
+            <div class="info_box">
+                <div>
+                    <img 
+                    src=".\sourse\document.svg"
+                    alt="document_img"
+                    width: 51px;
+                    height: 52px;
+                    />
+                </div>
+                <div  class = "info_box_mes">
+                    Заключить договор
+                </div>
+                <div class = "info_box_comment">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
+                </div>
             </div>
             
-         </div>
-
+            <div class="info_box">
+                <div>
+                    <img 
+                    src=".\sourse\passport.svg"
+                    alt="document_img"
+                    width: 51px;
+                    height: 52px;
+                    />
+                </div>
+                <div  class = "info_box_mes">
+                    Предоставить данные
+                </div>
+                <div class = "info_box_comment">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
+                </div>
+            </div>
         </div>
-    </info_section>
 
-    <bottom>
+    </div>
+    
 
-    </bottom>
+    
 
     
 </body>
