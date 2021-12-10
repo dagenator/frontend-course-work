@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Proxima Nova; 
+    src: 
+        url('./fonts/ProximaNovaExCn-Regular.ttf'); 
+    }
+
+    @font-face {
+    font-family: Proxima Nova Bold; 
+    src:
+        url('./fonts/ProximaNovaExCn-Bold.ttf'); 
+    }
+
+    .slide_info_header{
+        font-family: Proxima Nova Bold;
+        font-size:64px;
+        text-align:left;
+        color: #ffffff;
+        flex-wrap: wrap;
+   }
+
+   .slide_info_text{
+        font-family: Proxima Nova;
+        font-size:16px;
+        text-align:left;
+        color: #ffffff;
+        flex-wrap: wrap;
+   }
+
+   .slide_yellow_button{
+        font-family: Proxima Nova Bold;
+        width: 240px;
+        height: 52px;
+        background: #E5E31F;
+        border-radius: 10px;
+        margin-top: 100px;
+        color: #2A4F71;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+
+    }
+
+   .slide_box{
+        width: 1450px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align:center;
+   }
+
+   .slider_box{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align:center;
+        
+    }
+   .slide_picture{
+        width: 510px;
+        height: 612px; 
+        position: relative;
+        bottom: 0px;
+   }
+   
+   .slider_line{
+        width: 200vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+        left: 0px;
+        transition: all ease 1s;
+        
+   }
+
+   .slide_text{
+        padding-top: 100px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+   }
+
+   .between_slides{
+       width: 100px;
+   }
+
+   .slider_box{
+    height: 600;
+    overflow: hidden;
+}
