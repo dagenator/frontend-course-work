@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Proxima Nova; 
+    src: 
+        url('./fonts/ProximaNovaExCn-Regular.ttf'); 
+    }
+
+    @font-face {
+    font-family: Proxima Nova Bold; 
+    src:
+        url('./fonts/ProximaNovaExCn-Bold.ttf'); 
+    }
+
+    
+
+    .bottom_container{
+        height: 320px;
+        background: #23415E;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+    }
+
+
+
+    .bottom_proxima_nova_white{
+        width: 410px;
+        height: 144px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align:left;
+        align-items: center;
+    }
+
+    .bottom_line{
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-family: Proxima Nova;
+        color:#fff;
+    }
+
+    .bottom_proxima_nova_blu{
+        font-family: Proxima Nova;
+        font-size: 15px;
+        text-align:left;
+        color: #A9C5E0;
+    }
+
+    .bottom_contact_box{
+        width: 160px;
+    }
