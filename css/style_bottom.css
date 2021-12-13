@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Proxima Nova; 
+    src: 
+        url('./fonts/ProximaNovaExCn-Regular.ttf'); 
+    }
+
+    @font-face {
+    font-family: Proxima Nova Bold; 
+    src:
+        url('./fonts/ProximaNovaExCn-Bold.ttf'); 
+    }
+
+    .container_with_top{
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-left:20px ;
+    }
+
+    .bottom_container{
+        height: 450px;
+        background: #23415E;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bottom_proxima_nova_white{
+        width: 530px;
+        height: 144px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align:left;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .bottom_line{
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-family: Proxima Nova;
+        color:#fff;
+    }
+
+    .bottom_proxima_nova_blu{
+        font-family: Proxima Nova;
+        font-size: 15px;
+        text-align:left;
+        color: #A9C5E0;
+    }
+
+    .bottom_contact_box{
+        width: 160px;
+    }
+
+    .bottom_contact_box_wrap{
+        width: 160px;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+
+    
+
+     /* Телефон header*/
+    
+
+     /* Планшет header*/
+    @media(max-width:999px) {
+        .bottom_contact_box_wrap{
+            width: 160%;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+        }
+        
+    }
+
+    @media(max-device-width:400px) {
+        .bottom_container{
+            height: 450px;
+            background: #23415E;
+            display: flex;
+            justify-content:flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .uxepress_wrapper{
+            margin-bottom: 40px;
+        }
+
+        .bottom_proxima_nova_white{
+            width: 330px;
+            height: 144px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align:left;
+            align-items:flex-start;
+            margin-bottom: 50px;
+        }
+
+        .bottom_contact_box_wrap{
+            width: 160%;
+            display: flex;
+            flex-direction:row;
+            justify-content:flex-start;
+        }
+     }
