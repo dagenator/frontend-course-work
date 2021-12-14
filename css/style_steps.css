@@ -11,6 +11,7 @@
     }
 
     .info_container{
+        max-width: 1100px;
         background-color: white;
         color: #000000;
         padding-top: 96px;
@@ -20,11 +21,13 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-
+        
     }
 
     .info_steps{
+        max-width: 1400px;
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;

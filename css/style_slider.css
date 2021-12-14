@@ -43,12 +43,14 @@
     }
 
    .slide_box{
-        width: 1450px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+        width: 100%;
         text-align:center;
    }
+
+   .slide_box2{
+     width: 100%;
+     text-align:center;
+     }
 
    .slider_box{
         width: 100vw;
@@ -58,24 +60,34 @@
         text-align:center;
         
     }
-   .slide_picture{
+   .slide_picture_car{
         width: 510px;
         height: 612px; 
         position: relative;
         bottom: 0px;
+        right: 135xp;
    }
+
+   .slide_picture_doc{
+     width: 834px;
+     height: 575px;
+     position: relative;
+     bottom: 0px;
+     right: -225px;
+     }
    
    .slider_line{
-        width: 200vw;
+        width: 200%;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         position: relative;
         left: 0px;
-        transition: all ease 1s;
-        
+        transition: all ease 1s; 
    }
-
+   
+   /* переход к 3 сладйу - 1 фейк, transition - никакой -> переход на настоящий слайд 1 */
    .slide_text{
         padding-top: 100px;
         width: 500px;

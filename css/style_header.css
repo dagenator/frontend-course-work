@@ -13,7 +13,8 @@
     
     @media(max-device-width:999px) {
         .top_block_blue{
-            width: 100vw;
+            box-sizing: border-box;
+            width: 100%;
             min-height: 600px;
             height: auto;
             background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); /* Цвет фона и путь к файлу */
@@ -24,7 +25,8 @@
 
     @media(min-device-width: 1000px){
         .top_block_blue{
-            width: 100vw;
+            box-sizing: border-box;
+            width: 100%;
             min-height: 600px;
             height: auto;
             background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); /* Цвет фона и путь к файлу */
