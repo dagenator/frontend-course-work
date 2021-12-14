@@ -107,7 +107,7 @@
         }
 
         .bottom_contact_box_wrap{
-            width: 160%;
+            width: 100%;
             display: flex;
             flex-direction:row;
             justify-content:flex-start;

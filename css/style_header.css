@@ -19,7 +19,7 @@
             height: auto;
             background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); /* Цвет фона и путь к файлу */
             color: #fff; /* Цвет текста */
-            padding: 10px 10px 0px 10px;   
+            padding: 10px 10px 0px 10px; 
         }
     }
 
@@ -31,7 +31,7 @@
             height: auto;
             background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%); /* Цвет фона и путь к файлу */
             color: #fff; /* Цвет текста */
-            padding: 46px 30px 0px 46px;   
+             
         }
     }
 
@@ -106,9 +106,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 27px 135px 0px 135px;
 
     }
-   
+    
+    @media(max-device-width:999px) {
+        .top_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+        }
+
+    }
 
     .top_header_left{
         display: flex;

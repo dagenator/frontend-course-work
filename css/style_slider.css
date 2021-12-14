@@ -43,46 +43,44 @@
     }
 
    .slide_box{
-        margin: auto;
-        width: 100%;
-        text-align:center;
+        margin-left: 150px;
+     overflow: hidden;
+     max-width: 100%;
+     display: flex;
+     justify-content: space-between;
    }
 
-   .slide_box2{
-     width: 100%;
-     text-align:center;
-     }
+   
 
    .slider_box{
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        text-align:center;
-        
+          box-sizing: border-box;
+          margin: auto;
+          width: 100%;
+          text-align:center;
     }
    .slide_picture_car{
         width: 510px;
         height: 612px; 
         position: relative;
         bottom: 0px;
-        right: 135xp;
+        right: 50px;
+         
+        
    }
 
    .slide_picture_doc{
      width: 834px;
      height: 575px;
      position: relative;
-     bottom: 0px;
-     right: -225px;
+     bottom: -38px;
+     right: -125px;
      }
    
-   .slider_line{
-        width: 200%;
+   #slider_line{
+         
+        width: 300%;
         box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
         position: relative;
         left: 0px;
         transition: all ease 1s; 
@@ -102,6 +100,70 @@
    }
 
    .slider_box{
-    height: 600;
+    height: 500px;
     overflow: hidden;
-}
+   }
+    
+   @media(max-device-width:999px) {
+          .slide_picture_car{
+               display:none;
+          }
+          
+          .slide_picture_doc{
+               display:none;
+          }
+          .slide_yellow_button{
+               display:none;
+          }
+          .slide_box{
+            margin-left: 15px;
+            overflow: hidden;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          .slider_text{
+               margin-top: 0% auto;
+               margin-bottom: 0% auto;
+          }
+     }
+
+     @media(max-device-width:400px) {
+          .slide_picture_car{
+               display:none;
+          }
+       
+          .slide_picture_doc{
+               display:none;
+          }
+         
+          .slide_yellow_button{
+               font-family: Proxima Nova Bold;
+               width: 345px;
+               height: 52px;       
+               background: #E5E31F;
+               border-radius: 10px;
+               margin-top: 100px;
+               color: #2A4F71;
+               display: flex;
+               justify-content: center;
+               text-align: center;
+               align-items: center;
+               margin-right: 0% auto;
+               margin-right: 0% auto;
+           }
+
+           .slide_box{
+               margin-left: 0px;
+             }
+          .slide_info_header{
+               font-size:38px;
+               
+          }
+          .slider_text{
+               margin-left: 10px;
+          }
+         
+     }
+
+ 
