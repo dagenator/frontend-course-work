@@ -14,8 +14,12 @@ window.addEventListener("load", function(event) {
     slide_box2.style.width = window_width +"px"; 
     slide_box3.style.width = window_width +"px"; 
     slider_line.style.width =  window_width*slideNum +"px";
+    document.getElementById("slide_button1").className = "active_button";
+    document.getElementById("slide_button2").className = "passive_button";
+  
     slideMove();
-  });
+    
+    });
 
 
 

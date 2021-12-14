@@ -38,8 +38,6 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        
-
     }
 
    .slide_box{
@@ -50,6 +48,33 @@
      justify-content: space-between;
    }
 
+   .slide_button_line{
+        width: 100%;
+        position: relative;
+        bottom: 10px;
+   }
+   .slide_button_wrapper{
+     width: 35px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content:space-between ;
+
+   }
+   .active_button{
+     box-sizing: border-box;
+     width: 14px;
+     height: 14px;
+     background: #264160;
+     border-radius: 4px;
+   }
+   .passive_button{
+     box-sizing: border-box;
+     width: 14px;
+     height: 14px;
+     border: 3px solid #264160;
+     border-radius: 4px;
+     }
    
 
    .slider_box{
@@ -57,6 +82,8 @@
           margin: auto;
           width: 100%;
           text-align:center;
+          overflow: hidden;
+          min-height: 550px;
     }
    .slide_picture_car{
         width: 510px;
@@ -83,6 +110,7 @@
         display: flex;
         position: relative;
         left: 0px;
+        bottom: -15px;
         transition: all ease 1s; 
    }
    
@@ -99,10 +127,7 @@
        width: 100px;
    }
 
-   .slider_box{
-    height: 500px;
-    overflow: hidden;
-   }
+   
     
    @media(max-device-width:999px) {
           .slide_picture_car{
@@ -126,6 +151,9 @@
                margin-top: 0% auto;
                margin-bottom: 0% auto;
           }
+          /* .slide_button_line{
+               bottom: 10px;
+          } */
      }
 
      @media(max-device-width:400px) {
