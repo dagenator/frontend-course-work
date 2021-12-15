@@ -36,6 +36,8 @@ window.addEventListener("load", function(event) {
     };
 
     document.getElementById("top_header_yellow_square").onclick = function(){hide()};
+    document.getElementById("modal_exit_button").onclick = function(){hide()};
+    document.getElementById("modal_enter").onclick = function(){hide()};
     
     slideMove(0);
     
