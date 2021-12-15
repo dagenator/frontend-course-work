@@ -9,8 +9,8 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/admin-panel.css" rel="stylesheet">
-    <link href="./css/style_bottom.css" rel="stylesheet">
     <link href="./css/style_header.css" rel="stylesheet">
+    <link href="./css/style_bottom.css" rel="stylesheet">
     <title>Админ. панель</title>
 </head>
 
@@ -27,7 +27,7 @@
                     Введите логин и пароль, чтобы войти в личный кабинет
                 </div>
                 <input class ="modal_login" id = "modal_login"  type="input" placeholder="Логин" />
-                <input class ="modal_password" id = "modal_password"  type="input" placeholder="Пароль" />
+                <input class ="modal_password" id = "modal_password"  type="password" placeholder="Пароль" />
                 
                 <div class ="modal_enter" id = "modal_enter">
                     Вход
@@ -100,12 +100,16 @@
         <div class="news-form__char-count">Символов: 0/150</div>
             
         <div class="news-form__add-image-container">
-            <input class="news-form__upload-img" type="file">
-            <img src="./sourse/Shape.svg" accept="image/jpeg,image/png">
-            <div class="news-form__add-image-text">+ Добавить изображение</div>
-            <img class="news-form__uploaded-img hidden">
-            <div class="news-form__uploaded-img-name"></div>
-            <img class="news-form__del-img-bt hidden" src="./sourse/cross.svg">
+            <div class="news-form__add-image-container">
+                <input class="news-form__upload-img" type="file">
+                <img src="./sourse/Shape.svg" accept="image/jpeg,image/png">
+                <div class="news-form__add-image-text">+ Добавить изображение</div>
+            </div>
+            <div class="news-form__add-image-container">
+                <img class="news-form__uploaded-img hidden">
+                <div class="news-form__uploaded-img-name"></div>
+                <img class="news-form__del-img-bt hidden" src="./sourse/cross.svg">
+            </div>
         </div>
 
         <input type="submit" class="news-form__button" value="Применить">

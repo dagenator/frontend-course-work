@@ -1,21 +1,3 @@
-@font-face {
-    font-family: Proxima Nova; 
-    src: 
-        url('../fonts/ProximaNova-Regular.ttf'); 
-}
-
-@font-face {
-    font-family: Proxima Nova Bold; 
-    src:
-        url('../fonts/ProximaNova-Bold.ttf'); 
-}
-
-@font-face {
-    font-family: Proxima Nova Semibold; 
-    src:
-        url('../fonts/ProximaNova-Semibold.ttf'); 
-    }
-
 .container{
     padding-right: 135px;
     padding-left: 135px;
@@ -115,12 +97,14 @@
     font-family: 'Proxima Nova';
     font-size: 16px;
     font-weight: 400;
+    align-self: center;
 }
 
 .news-form__del-img-bt {
-    width: 24px;
-    height: 24px;
-    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    align-self: center;
 }
 
 .news-form__del-img-bt:hover {
@@ -133,7 +117,14 @@
     display: flex;    
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     align-content: space-between;
+}
+
+.news-form__image-info {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
 }
 
 .news-form__button{
@@ -170,4 +161,19 @@
 
 .hidden {
     visibility: hidden;    
+}
+
+@media(max-device-width:999px) {
+    .news-form {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .news-form__uploaded-img {
+        margin: 14px 35px 14px 0;
+    }
+
+    .news-form__button {
+        margin-top: 32px;
+    }
 }
