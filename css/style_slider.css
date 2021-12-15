@@ -151,12 +151,13 @@
                margin-top: 0% auto;
                margin-bottom: 0% auto;
           }
-          /* .slide_button_line{
-               bottom: 10px;
-          } */
+          .slide_button_line{
+               bottom: -230px;
+          }
      }
 
      @media(max-device-width:400px) {
+          
           .slide_picture_car{
                display:none;
           }
@@ -191,7 +192,9 @@
           .slider_text{
                margin-left: 10px;
           }
-         
+          .slide_button_line{
+               bottom: -140px;
+          }
      }
 
  
