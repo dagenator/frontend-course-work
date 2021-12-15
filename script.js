@@ -21,6 +21,7 @@ window.addEventListener("load", function(event) {
     slider_line.style.width =  window_width*slideNum +"px";
     document.getElementById("slide_button1").className = "active_button";
     document.getElementById("slide_button2").className = "passive_button";
+
     document.getElementById("slide_button1").onclick = function() { 
       i = 0;
       console.log(i); 
@@ -34,9 +35,8 @@ window.addEventListener("load", function(event) {
       slideMove(0);
     };
 
-    // document.getElementById("slide_button1").setAttribute('onclick', function() { i= 2});
-    // document.getElementById("slide_button2").setAttribute('onclick', function() { i= 1});
-
+    document.getElementById("top_header_yellow_square").onclick = function(){hide()};
+    
     slideMove(0);
     
 });
@@ -50,6 +50,8 @@ window.addEventListener("load", function(event) {
 //   console.log(" slide_button2");
 //   i=1;
 // }
+
+
 
 window.addEventListener(`resize`, event => {
     //console.log(document.documentElement.clientWidth);
@@ -101,3 +103,15 @@ function slideMove(param) {
     }
     
   }
+
+  function hide() {
+    console.log("hide"); 
+    let authorization_window = document.getElementById("authorization_window");
+    if(authorization_window.className == "hidden_window"){
+      authorization_window.className = "active_window";
+    }
+    else{
+      authorization_window.className = "hidden_window";
+    }
+    
+  };

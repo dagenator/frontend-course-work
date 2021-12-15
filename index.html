@@ -11,7 +11,29 @@
 <link rel="stylesheet" href ="css\style_slider.css">
 </head>
 <body>
-
+    <div id = "authorization_window" class = "active_window" >
+        
+        <div class ="window_box" >
+            <img src=".\sourse\cross.svg" alt="cross_exit_img" class ="modal_exit_button">
+            <div class= "modal_inside_wrapper">
+                <div class ="modal_header" >
+                    Авторизация
+                </div>
+                <div class ="modal_text" >
+                    Введите логин и пароль, чтобы войти в личный кабинет
+                </div>
+                <input class ="modal_login"  type="input" placeholder="Логин" />
+                <input class ="modal_password"  type="input" placeholder="Пароль" />
+                
+                <div class ="modal_enter">
+                    Вход
+                </div>
+            </div>
+        </div>
+        <div class ="modal_background" >
+            
+        </div>
+    </div>
     <div class = "top_block_blue">
         
         <div class = "container top_header">
@@ -55,7 +77,7 @@
                     </div>
                 </div>
 
-                <div class = "top_header_yellow_square">
+                <div class = "top_header_yellow_square" id = "top_header_yellow_square">
                     <div class = "in_button">
                         Вход
                     </div>
