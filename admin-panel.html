@@ -65,22 +65,26 @@
 
 
         
-    <form class="news-form container">
+    <form class="news-form container" onsubmit="return validate_form();">
         <div class="title">Добавить новость</div>
         <div class="news-form__common-text">
             Введите текст новости, а также приложите изображение (размер: 270х270px, формат JPG,PNG)
         </div>
-
-        <textarea class="news-form__textarea">
-
-        </textarea>
+        <textarea class="news-form__textarea" placeholder='Введите текст новости'></textarea>
+        <div class="news-form__char-count">Символов: 0/150</div>
+            
         <div class="news-form__add-image-container">
-            <img src="./sourse/Shape.svg">
+            <input class="news-form__upload-img" type="file">
+            <img src="./sourse/Shape.svg" accept="image/jpeg,image/png">
             <div class="news-form__add-image-text">+ Добавить изображение</div>
+            <img class="news-form__uploaded-img hidden">
+            <div class="news-form__uploaded-img-name"></div>
+            <img class="news-form__del-img-bt hidden" src="./sourse/remove_round.svg">
         </div>
+
+        <input type="submit" class="news-form__button" value="Применить">
             
     </form>
-
 
 
 
@@ -121,4 +125,5 @@
         </div>
     </div>
 </body>
+<script src="./scripts/admin-page.js"></script>
 </html>
