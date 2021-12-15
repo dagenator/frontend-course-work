@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Стили</title>
+<link href="./css/fonts.css" rel="stylesheet">
 <link rel="stylesheet" href ="css\style.css">
 <link rel="stylesheet" href ="css\style_header.css">
 <link rel="stylesheet" href ="css\style_bottom.css">
@@ -11,7 +12,7 @@
 <link rel="stylesheet" href ="css\style_slider.css">
 </head>
 <body>
-    <div id = "authorization_window" class = "active_window" >
+    <div id = "authorization_window" class = "hidden_window" >
         
         <div class ="window_box" >
             <img src=".\sourse\cross.svg" alt="cross_exit_img" class ="modal_exit_button" id = "modal_exit_button">
@@ -58,7 +59,7 @@
                         
                     </svg>
                 </div>
-                <div class= "header_name proxima_nova">
+                <div class= "header_name proxima_nova_light">
                         Курьерская служба доставки
                 </div>
             
@@ -72,7 +73,7 @@
                     alt="phone_img"
                     viewBox="0 0 1 14"
                     />
-                    <div class="header_phone_number proxima_nova">
+                    <div class="header_phone_number proxima_nova_light">
                         8 (909) 023-12-51
                     </div>
                 </div>
@@ -179,7 +180,7 @@
                     />
                 </div>
                 <div  class = "info_box_mes">
-                        Расчетать стоимость
+                        Рассчитать стоимость
                 </div>
                 <div class = "info_box_comment">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
@@ -294,8 +295,7 @@
         </div>
         
     </div>
-    
-    
 
     <script src="script.js"></script>
+    <script src="./scripts/auth_window.js"></script>    
 </body>

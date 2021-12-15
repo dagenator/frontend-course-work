@@ -22,14 +22,10 @@
 }
 
 .news-form{
-    /* background-color: white;
-    color: #000000; */
     padding-top: 174px;
     margin-bottom: 140px;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
-    /* align-items: center; */
 }
 
 .title{
