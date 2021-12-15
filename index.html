@@ -4,14 +4,36 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Стили</title>
-<link rel="stylesheet" href ="\css\style.css">
-<link rel="stylesheet" href ="\css\style_header.css">
-<link rel="stylesheet" href ="\css\style_bottom.css">
-<link rel="stylesheet" href ="\css\style_steps.css">
-<link rel="stylesheet" href ="\css\style_slider.css">
+<link rel="stylesheet" href ="css\style.css">
+<link rel="stylesheet" href ="css\style_header.css">
+<link rel="stylesheet" href ="css\style_bottom.css">
+<link rel="stylesheet" href ="css\style_steps.css">
+<link rel="stylesheet" href ="css\style_slider.css">
 </head>
 <body>
-
+    <div id = "authorization_window" class = "active_window" >
+        
+        <div class ="window_box" >
+            <img src=".\sourse\cross.svg" alt="cross_exit_img" class ="modal_exit_button" id = "modal_exit_button">
+            <div class= "modal_inside_wrapper">
+                <div class ="modal_header" >
+                    Авторизация
+                </div>
+                <div class ="modal_text" >
+                    Введите логин и пароль, чтобы войти в личный кабинет
+                </div>
+                <input class ="modal_login" id = "modal_login"  type="input" placeholder="Логин" />
+                <input class ="modal_password" id = "modal_password"  type="input" placeholder="Пароль" />
+                
+                <div class ="modal_enter" id = "modal_enter">
+                    Вход
+                </div>
+            </div>
+        </div>
+        <div class ="modal_background" >
+            
+        </div>
+    </div>
     <div class = "top_block_blue">
         
         <div class = "container top_header">
@@ -55,7 +77,7 @@
                     </div>
                 </div>
 
-                <div class = "top_header_yellow_square">
+                <div class = "top_header_yellow_square" id = "top_header_yellow_square">
                     <div class = "in_button">
                         Вход
                     </div>
@@ -63,10 +85,10 @@
             </div>
         </div>
 
-        <!--
+        
         <div class = "slider_box container">
-            <div class = "slider_line">
-                <div class ="slide_box">
+            <div id = "slider_line">
+                <div class ="slide_box " id ="slide1">
                     <div class = "slide_text">
                         <div class="slide_info_header">
                             Срочная доставка день в день
@@ -81,19 +103,41 @@
                            </div> 
                         </div>
                     </div>
-                    <div class = "slide_picture">
+                    <div class = "slide_picture_car">
                         <img src=".\sourse\big_car.png" alt="big_car.img"/>
                     </div>
                 </div>
-                <div class = "between_slides"></div>
-                <div class ="slide_box">
+                
+                <div class ="slide_box" id ="slide2">
+                    <div class = "slide_text">
+                        <div class= "slider_text">
+                            <div class="slide_info_header">
+                                Подписание договора за 1 час
+                            </div>
+                            <div class = "slide_info_text">
+                                В течение часа наш курьер заберет вашу посылку и подпишет с Вами 
+                                договор о предоставлении услуг.
+                            </div>
+                        </div>
+                        
+                        <div class = "slide_yellow_button">
+                           <div class = "text_in_yelllow_button">
+                            Заказать доставку
+                           </div> 
+                        </div>
+                    </div>
+                    <div class = "slide_picture_doc">
+                            <img src=".\sourse\big_document.svg" alt="document.img"/>
+                    </div>
+                </div>
+                <div class ="slide_box " id ="slide3">
                     <div class = "slide_text">
                         <div class="slide_info_header">
-                            Подписание договора за 1 час
+                            Срочная доставка день в день
                         </div>
                         <div class = "slide_info_text">
-                            В течение часа наш курьер заберет вашу посылку и подпишет с Вами 
-                            договор о предоставлении услуг.
+                            Для тех, кто не может ждать у нас есть услуга срочной курьерской 
+                            доставки корреспондеции и других видов отправлений.
                         </div>
                         <div class = "slide_yellow_button">
                            <div class = "text_in_yelllow_button">
@@ -101,16 +145,23 @@
                            </div> 
                         </div>
                     </div>
-                    <div class = "slide_picture">
-                            <img src=".\sourse\big_document.svg" alt="document.img"/>
-                        
+                    <div class = "slide_picture_car">
+                        <img src=".\sourse\big_car.png" alt="big_car.img"/>
+                    </div>
+                </div>
+            </div>
+            <div class = "slide_button_line">
+                <div class = "slide_button_wrapper">
+                    <div id ="slide_button1"  >
+                       
+                    </div>
+                    <div id ="slide_button2" >
                         
                     </div>
                 </div>
             </div>
         </div>
-         -->
-
+        
     </div>
     
     <div class="info_container container">

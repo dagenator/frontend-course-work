@@ -1,19 +1,19 @@
 @font-face {
     font-family: Proxima Nova; 
     src: 
-        url('./fonts/ProximaNovaExCn-Regular.ttf'); 
+        url('../fonts/ProximaNovaExCn-Regular.ttf'); 
     }
 
     @font-face {
     font-family: Proxima Nova Bold; 
     src:
-        url('./fonts/ProximaNovaExCn-Bold.ttf'); 
+        url('../fonts/ProximaNovaExCn-Bold.ttf'); 
     }
 
     .container_with_top{
         padding-top: 100px;
-        padding-right: 20px;
-        padding-left:20px ;
+        padding-right: 135px;
+        padding-left:135px ;
     }
 
     .bottom_container{
@@ -69,10 +69,15 @@
      /* Планшет header*/
     @media(max-width:999px) {
         .bottom_contact_box_wrap{
-            width: 160%;
+            width: 100%;
             display: flex;
             flex-direction:row;
             justify-content: center;
+        }
+        .container_with_top{
+            padding-top: 100px;
+            padding-right: 20px;
+            padding-left:20px ;
         }
         
     }
@@ -102,9 +107,14 @@
         }
 
         .bottom_contact_box_wrap{
-            width: 160%;
+            width: 100%;
             display: flex;
             flex-direction:row;
             justify-content:flex-start;
+        }
+        .container_with_top{
+            padding-top: 100px;
+            padding-right: 20px;
+            padding-left:20px ;
         }
      }
