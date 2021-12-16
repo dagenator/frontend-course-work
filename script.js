@@ -8,11 +8,6 @@ let slideNum = 3;
 let i=0;
 let waitTime=3000;
 
-// document.getElementById("slide_button1").setAttribute('onclick', function() { i= 2});
-// document.getElementById("slide_button2").setAttribute('onclick', function() { i= 1});
-
-
-
 window.addEventListener("load", function(event) {
     window_width = document.documentElement.clientWidth;
     slide_box1.style.width = window_width +"px"; 
@@ -34,30 +29,9 @@ window.addEventListener("load", function(event) {
       clearTimeout(timerId);
       slideMove(0);
     };
-
-    document.getElementById("top_header_yellow_square").onclick = function(){hide()};
-    document.getElementById("modal_exit_button").onclick = function(){hide()};
-    // document.getElementById("modal_enter").onclick = function(){hide()};
-    document.getElementById("modal_background").onclick = function(){hide()};
-    
-
-    
-
     slideMove(0);
     
 });
-//alert("a")
-// function slide_button1(){
-//     console.log(" slide_button1");
-//     i=2;
-// }
-
-// function slide_button2(){
-//   console.log(" slide_button2");
-//   i=1;
-// }
-
-
 
 window.addEventListener(`resize`, event => {
     //console.log(document.documentElement.clientWidth);
@@ -106,18 +80,5 @@ function slideMove(param) {
       document.getElementById("slide_button2").className = "passive_button";
       timerId = setTimeout(slideMove, waitTime/2,0)
       
-    }
-    
+    }    
   }
-
-  function hide() {
-    console.log("hide"); 
-    let authorization_window = document.getElementById("authorization_window");
-    if(authorization_window.className == "hidden_window"){
-      authorization_window.className = "active_window";
-    }
-    else{
-      authorization_window.className = "hidden_window";
-    }
-    
-  };

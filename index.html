@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Стили</title>
+<link href="./css/fonts.css" rel="stylesheet">
 <link rel="stylesheet" href ="css\style.css">
 <link rel="stylesheet" href ="css\style_header.css">
 <link rel="stylesheet" href ="css\style_bottom.css">
@@ -23,17 +24,15 @@
                     Введите логин и пароль, чтобы войти в личный кабинет
                 </div>
                
-                <form action="//admin.html">
+                <form action="./admin-panel.html">
                     <input class ="modal_login" id = "modal_login"  type="input" placeholder="Логин" required minlength="4" maxlength="10"/>
-                    <input class ="modal_password" id = "modal_password"  type="input" placeholder="Пароль" required minlength="4" maxlength="10"/>
+                    <input class ="modal_password" id = "modal_password"  type="password" placeholder="Пароль" required minlength="4" maxlength="10"/>
                     <button class ="modal_enter" id = "modal_enter" type="submit">Вход</button>
                 </form>
                 
             </div>
         </div>
-        <div class ="modal_background" id = "modal_background"  >
-            
-        </div>
+        <div class ="modal_background" id = "modal_background" ></div>
     </div>
     <div class = "top_block_blue">
         
@@ -59,7 +58,7 @@
                         
                     </svg>
                 </div>
-                <div class= "header_name proxima_nova">
+                <div class= "header_name proxima_nova_light">
                         Курьерская служба доставки
                 </div>
             
@@ -73,7 +72,7 @@
                     alt="phone_img"
                     viewBox="0 0 1 14"
                     />
-                    <div class="header_phone_number proxima_nova">
+                    <div class="header_phone_number proxima_nova_light">
                         8 (909) 023-12-51
                     </div>
                 </div>
@@ -180,7 +179,7 @@
                     />
                 </div>
                 <div  class = "info_box_mes">
-                        Расчетать стоимость
+                        Рассчитать стоимость
                 </div>
                 <div class = "info_box_comment">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.
@@ -295,8 +294,7 @@
         </div>
         
     </div>
-    
-    
 
     <script src="script.js"></script>
+    <script src="./scripts/auth_window.js"></script>    
 </body>
