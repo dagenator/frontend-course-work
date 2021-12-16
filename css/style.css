@@ -53,6 +53,10 @@
         border-spacing: 0;
     }
 
+    input:invalid {
+        border: 2px solid rgb(168, 91, 91);
+    }
+
     body {
         height: auto;
     }
@@ -135,6 +139,8 @@
         color: #474d53
     }
     .modal_enter{
+        padding: 0;
+        border: none;
         width: 430px;
         height: 52px;
         background: #E5E31F;
@@ -183,5 +189,4 @@
 
     }
 
-    
     

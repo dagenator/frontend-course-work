@@ -11,7 +11,7 @@
 <link rel="stylesheet" href ="css\style_slider.css">
 </head>
 <body>
-    <div id = "authorization_window" class = "active_window" >
+    <div id = "authorization_window" class = "hidden_window" >
         
         <div class ="window_box" >
             <img src=".\sourse\cross.svg" alt="cross_exit_img" class ="modal_exit_button" id = "modal_exit_button">
@@ -22,15 +22,16 @@
                 <div class ="modal_text" >
                     Введите логин и пароль, чтобы войти в личный кабинет
                 </div>
-                <input class ="modal_login" id = "modal_login"  type="input" placeholder="Логин" />
-                <input class ="modal_password" id = "modal_password"  type="input" placeholder="Пароль" />
+               
+                <form action="//admin.html">
+                    <input class ="modal_login" id = "modal_login"  type="input" placeholder="Логин" required minlength="4" maxlength="10"/>
+                    <input class ="modal_password" id = "modal_password"  type="input" placeholder="Пароль" required minlength="4" maxlength="10"/>
+                    <button class ="modal_enter" id = "modal_enter" type="submit">Вход</button>
+                </form>
                 
-                <div class ="modal_enter" id = "modal_enter">
-                    Вход
-                </div>
             </div>
         </div>
-        <div class ="modal_background" >
+        <div class ="modal_background" id = "modal_background"  >
             
         </div>
     </div>
