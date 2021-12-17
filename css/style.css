@@ -170,7 +170,6 @@ body {
         height: 470px;
     }
     
-
 }
 
 @media(max-device-width:400px) {
@@ -180,16 +179,16 @@ body {
     }
 
     .modal_login{
-        width: 345px;
+        width: 330px;
     }
     .modal_password{
-        width: 345px;
+        width: 330px;
         
     }
     .modal_enter{
         padding: 0;
         border: none;
-        width: 430px;
+        width: 350px;
         height: 52px;
         background: #E5E31F;
         border-radius: 10px;
@@ -202,13 +201,15 @@ body {
         justify-content: center;
     }
 
-    @media(max-device-width:999px) {
-        .window_box{
-            width: 560px;
-            height: 470px;
-        }
-        
+    .modal_exit_button{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: 330px;
+        z-index: 121;
     }
+    
     .modal_inside_wrapper{
         margin-right:  auto;
         margin-left:  10px;
